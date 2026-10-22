@@ -1,6 +1,7 @@
 export { createFrappeClient, call, db, auth } from './frappe/client';
 export { getLoggedUser, getUserRoles, logout, login } from './frappe/auth';
 export { isUserRestrictedFromTableOrders, canCaptainTransfer, derivePOSCapabilities } from './frappe/roles';
+export { parseFrappeError } from './frappe/errors';
 export {
   buildDeskUrl,
   withReturnContext,
@@ -19,6 +20,7 @@ export {
   formatCurrency,
   formatCompactCurrency,
   formatInvoiceTime,
+  normalizeFrappeTime,
   setActiveCurrency,
   getActiveCurrency,
   currencyFractionDigits,
